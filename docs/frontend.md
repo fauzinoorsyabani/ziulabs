@@ -14,7 +14,7 @@ HTML memakai landmark semantic, heading berurutan, focus state bawaan browser, l
 
 ## Responsive behavior
 
-Desktop memakai grid dua kolom pada hero dan tiga kolom pada katalog. Di bawah 800px layout menjadi satu kolom dan navigasi disederhanakan. Di bawah 500px kartu katalog menjadi satu kolom agar teks tidak terjepit.
+Desktop memakai grid dua kolom pada hero dan tiga kolom pada katalog. Di bawah 800px layout menjadi satu kolom, ilustrasi hero dibatasi pada area visualnya agar tidak menambah horizontal scroll, dan navigasi utama berpindah ke menu ringkas yang bisa dibuka dengan keyboard maupun sentuhan. Di bawah 500px kartu katalog menjadi satu kolom agar teks tidak terjepit.
 
 ## Animasi
 
