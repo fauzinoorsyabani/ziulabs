@@ -10,7 +10,7 @@ Versi yang tersedia saat ini adalah **catalogue-first MVP**: landing page, katal
 
 ## Website production
 
-Website production saat ini tersedia di [geo-booster-fauzins-projects.vercel.app](https://geo-booster-fauzins-projects.vercel.app/). Aplikasi PHP di `php-app/public/` adalah source canonical; `php-app/static/` adalah export statis yang digunakan untuk situs production.
+Website production saat ini tersedia di [ziulabs.vercel.app](https://ziulabs.vercel.app/). Aplikasi PHP di `php-app/public/` adalah source canonical; `php-app/static/` adalah export statis yang digunakan untuk situs production.
 
 ## Menjalankan lokal
 
@@ -48,7 +48,7 @@ git diff --check
 
 Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunjuk ke `php-app/public/`. Jangan pernah menjadikan `config/`, `storage/`, atau `.env` sebagai web root.
 
-Deployment production saat ini menggunakan export statis. Status push GitHub tidak memastikan deployment Vercel terjadi; jangan mengasumsikan deployment otomatis tanpa integrasi yang sudah diverifikasi.
+Deployment production saat ini menggunakan export statis. Repositori GitHub sudah terhubung ke project Vercel; setelah push, periksa status deployment dan URL publiknya untuk memastikan perubahan sudah live.
 
 Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Setiap kartu produk membuka WhatsApp `+62 895-6092-50509` dengan nama dan harga produk yang sudah terisi. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.
 
