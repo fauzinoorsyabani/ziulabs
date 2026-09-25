@@ -1,6 +1,6 @@
 # Antigravity development guide
 
-This guide is for working on ZiuLabs in Antigravity IDE. Open the repository root (`geo-booster/`) as the project; do not open only `php-app/static/`, since the PHP application is the editable source of truth.
+This guide is for working on ZiuLabs in Antigravity IDE. Open the repository root (the cloned `ziulabs/` directory) as the project; do not open only `php-app/static/`, since the PHP application is the editable source of truth.
 
 ## Requirements and local run
 
@@ -59,7 +59,7 @@ Push only to the confirmed canonical repository and intended branch. A successfu
 
 ## Production reference
 
-The current production URL is <https://geo-booster-fauzins-projects.vercel.app/>. Production currently uses a static export. Do not claim that a GitHub push automatically deploys to Vercel unless that integration has been explicitly verified.
+The current production URL is <https://ziulabs.vercel.app/>. Production currently uses a static export. GitHub is now connected to Vercel, so commits to the configured production branch may trigger a deployment; always verify the deployment status and live URL rather than assuming a push succeeded.
 
 For project architecture, business constraints, and development practices, see [System Design](architecture.md), [Project Management](project-management.md), [Agentic Engineering](agentic-engineering.md), and the top-level [README](../README.md).
 
