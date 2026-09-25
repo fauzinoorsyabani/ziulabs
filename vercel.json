@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "",
-  "buildCommand": "echo 'Using the PHP-generated Geo Booster static export'",
-  "outputDirectory": "php-app/static",
+  "buildCommand": "mkdir -p dist/static && cp -R php-app/static/. dist/static/",
+  "outputDirectory": "dist/static",
   "headers": [
     {
       "source": "/(.*)",
