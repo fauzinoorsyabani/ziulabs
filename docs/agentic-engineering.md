@@ -1,4 +1,4 @@
-# Agentic Engineering — Geo Booster
+# Agentic Engineering — ZiuLabs
 
 Dokumen ini menjadi kontrak kerja antara manusia, agent, dan codebase. Agent tidak boleh mengubah perilaku produk hanya berdasarkan asumsi yang tidak tertulis.
 
@@ -46,4 +46,4 @@ Rollback:
 
 ## Prompt contract untuk agent
 
-Agent yang mengerjakan Geo Booster harus mengembalikan ringkasan perubahan, file yang disentuh, command verifikasi, hasil verifikasi, risiko tersisa, dan follow-up. Bila requirement bertentangan dengan legalitas atau keamanan, agent menghentikan implementasi bagian tersebut dan menawarkan desain aman yang dapat diaudit.
+Agent yang mengerjakan ZiuLabs harus mengembalikan ringkasan perubahan, file yang disentuh, command verifikasi, hasil verifikasi, risiko tersisa, dan follow-up. Bila requirement bertentangan dengan legalitas atau keamanan, agent menghentikan implementasi bagian tersebut dan menawarkan desain aman yang dapat diaudit.

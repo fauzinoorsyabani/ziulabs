@@ -1,4 +1,4 @@
-# Database Plan — Geo Booster
+# Database Plan — ZiuLabs
 
 ## Keputusan fase sekarang
 

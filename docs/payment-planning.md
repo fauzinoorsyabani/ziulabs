@@ -2,7 +2,7 @@
 
 ## Status
 
-Integrasi Curies belum diaktifkan. Nama provider perlu dikonfirmasi bersama dokumentasi API resmi, model settlement, negara operasi, biaya, refund support, dan status legal untuk bisnis Geo Booster.
+Integrasi Curies belum diaktifkan. Nama provider perlu dikonfirmasi bersama dokumentasi API resmi, model settlement, negara operasi, biaya, refund support, dan status legal untuk bisnis ZiuLabs.
 
 ## Desain adapter
 
@@ -30,7 +30,7 @@ Implementasi awal diberi nama `CuriesPaymentProvider`. Secret dibaca dari enviro
 
 ## Guardrails
 
-Jangan meminta atau menyimpan PIN, OTP, password akun digital, atau private key melalui form Geo Booster. Jangan menandai order `paid` berdasarkan redirect browser; hanya webhook yang telah diverifikasi yang boleh mengubah status. Jangan mulai charge nyata sebelum provider, terms, dan refund flow disetujui.
+Jangan meminta atau menyimpan PIN, OTP, password akun digital, atau private key melalui form ZiuLabs. Jangan menandai order `paid` berdasarkan redirect browser; hanya webhook yang telah diverifikasi yang boleh mengubah status. Jangan mulai charge nyata sebelum provider, terms, dan refund flow disetujui.
 
 ## Acceptance criteria
 

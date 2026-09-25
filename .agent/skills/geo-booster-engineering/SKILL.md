@@ -1,9 +1,9 @@
 ---
 name: geo-booster-engineering
-description: Guardrails for building Geo Booster, a PHP digital-product commerce SaaS.
+description: Guardrails for building ZiuLabs, a PHP digital-product commerce SaaS.
 ---
 
-# Geo Booster Engineering Skill
+# ZiuLabs Engineering Skill
 
 ## Use when
 

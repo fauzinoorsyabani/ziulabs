@@ -1,6 +1,6 @@
 # Antigravity development guide
 
-This guide is for working on Geo Booster in Antigravity IDE. Open the repository root (`geo-booster/`) as the project; do not open only `php-app/static/`, since the PHP application is the editable source of truth.
+This guide is for working on ZiuLabs in Antigravity IDE. Open the repository root (`geo-booster/`) as the project; do not open only `php-app/static/`, since the PHP application is the editable source of truth.
 
 ## Requirements and local run
 

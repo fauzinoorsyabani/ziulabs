@@ -1,8 +1,8 @@
-# Geo Booster — System Design
+# ZiuLabs — System Design
 
 ## Keputusan utama
 
-Geo Booster dibangun sebagai SaaS katalog dan commerce untuk produk digital. Tahap pertama menggunakan arsitektur **modular monolith PHP**. Pola ini dipilih karena tim masih kecil, domain bisnis belum stabil, dan biaya operasional harus rendah. Batas modul dibuat sejak awal agar sistem dapat dipisahkan menjadi service hanya jika beban dan kebutuhan organisasi membenarkannya.
+ZiuLabs dibangun sebagai SaaS katalog dan commerce untuk produk digital. Tahap pertama menggunakan arsitektur **modular monolith PHP**. Pola ini dipilih karena tim masih kecil, domain bisnis belum stabil, dan biaya operasional harus rendah. Batas modul dibuat sejak awal agar sistem dapat dipisahkan menjadi service hanya jika beban dan kebutuhan organisasi membenarkannya.
 
 > Produk digital tidak boleh diperlakukan sebagai komoditas tanpa asal-usul. Sistem wajib menyimpan sumber, bukti hak distribusi, kebijakan penggunaan, masa berlaku akses, dan status fulfillment untuk setiap SKU.
 
@@ -16,7 +16,7 @@ Batas MVP adalah katalog, inquiry order, dan admin-ready data model. Pembayaran 
 
 ```mermaid
 flowchart LR
-  Customer[Customer] --> Web[Geo Booster Web]
+  Customer[Customer] --> Web[ZiuLabs Web]
   Operator[Operator/Admin] --> Web
   Web --> DB[(MySQL / MariaDB)]
   Web --> Payment[Payment Provider]

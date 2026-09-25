@@ -1,4 +1,4 @@
-# Geo Booster — Project Management Plan
+# ZiuLabs — Project Management Plan
 
 ## Outcome
 

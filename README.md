@@ -1,10 +1,10 @@
-# Geo Booster
+# ZiuLabs
 
-Geo Booster adalah fondasi Software as a Service (SaaS) untuk katalog dan penjualan produk digital secara transparan, aman, dan mudah dioperasikan. Versi awal ini memakai **PHP 8.2+ tanpa TypeScript** untuk menjaga kurva belajar tetap rendah.
+ZiuLabs adalah fondasi Software as a Service (SaaS) untuk katalog dan penjualan produk digital secara transparan, aman, dan mudah dioperasikan. Versi awal ini memakai **PHP 8.2+ tanpa TypeScript** untuk menjaga kurva belajar tetap rendah.
 
 ## Status proyek
 
-Repositori ini sebelumnya berisi aplikasi React/TypeScript dari proyek lain. Fondasi Geo Booster ditambahkan sebagai aplikasi PHP mandiri di `php-app/` agar migrasi dapat dilakukan bertahap tanpa menghapus aset lama.
+Repositori ini sebelumnya berisi aplikasi React/TypeScript dari proyek lain. Fondasi ZiuLabs ditambahkan sebagai aplikasi PHP mandiri di `php-app/` agar migrasi dapat dilakukan bertahap tanpa menghapus aset lama.
 
 Versi yang tersedia saat ini adalah **catalogue-first MVP**: landing page, katalog produk, filter kategori, trust signals, dan alur permintaan pesanan yang belum terhubung ke pembayaran atau provisioning otomatis.
 
@@ -32,7 +32,7 @@ Buka `http://127.0.0.1:8080`. Launcher memerlukan PHP 8.2 atau lebih baru. Pandu
 
 ## Prinsip produk
 
-Geo Booster tidak boleh menjual kredensial curian, akses ilegal, atau produk yang melanggar kebijakan penyedia layanan. Integrasi pembayaran dan fulfillment hanya boleh diaktifkan setelah legalitas reseller, terms of service, refund policy, dan bukti kepemilikan lisensi diverifikasi.
+ZiuLabs tidak boleh menjual kredensial curian, akses ilegal, atau produk yang melanggar kebijakan penyedia layanan. Integrasi pembayaran dan fulfillment hanya boleh diaktifkan setelah legalitas reseller, terms of service, refund policy, dan bukti kepemilikan lisensi diverifikasi.
 
 ## Referensi internal
 
