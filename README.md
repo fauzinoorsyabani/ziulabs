@@ -10,21 +10,23 @@ Versi yang tersedia saat ini adalah **catalogue-first MVP**: landing page, katal
 
 ## Website production
 
-Website permanen tersedia di [geo-booster-eta.vercel.app](https://geo-booster-eta.vercel.app/). Deployment production dibuat dari export statis `php-app/static/`, sedangkan aplikasi PHP di `php-app/public/` tetap menjadi source canonical untuk pengembangan backend berikutnya.
+Website production saat ini tersedia di [geo-booster-fauzins-projects.vercel.app](https://geo-booster-fauzins-projects.vercel.app/). Aplikasi PHP di `php-app/public/` adalah source canonical; `php-app/static/` adalah export statis yang digunakan untuk situs production.
 
 ## Menjalankan lokal
 
+Dari root repository, jalankan:
+
 ```bash
-cd php-app
-php -S 127.0.0.1:8080 -t public
+./run-local.sh
 ```
 
-Buka `http://127.0.0.1:8080`.
+Buka `http://127.0.0.1:8080`. Launcher memerlukan PHP 8.2 atau lebih baru. Panduan membuka dan bekerja pada project di Antigravity tersedia di [docs/antigravity.md](docs/antigravity.md).
 
 ## Struktur penting
 
-- `php-app/public/` — web root dan asset yang boleh diakses publik.
-- `php-app/config/` — konfigurasi non-rahasia dan data katalog sementara.
+- `php-app/public/` — source aplikasi PHP canonical, web root, dan asset publik.
+- `php-app/config/` — konfigurasi/data aplikasi; jangan jadikan web root atau tempat menyimpan secrets.
+- `php-app/static/` — export statis production yang dihasilkan dari source PHP.
 - `docs/` — system design, project management, backend, frontend, API, data model, dan threat model.
 - `.agent/skills/` — aturan kerja agentic engineering yang wajib diikuti saat mengembangkan fitur.
 
@@ -40,10 +42,14 @@ Mulai dari [System Design](docs/architecture.md), lalu baca [Project Management]
 
 ```bash
 php -l php-app/public/index.php
+php -l php-app/config/app.php
+git diff --check
 ```
 
 Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunjuk ke `php-app/public/`. Jangan pernah menjadikan `config/`, `storage/`, atau `.env` sebagai web root.
 
-Deployment Vercel saat ini menggunakan upload production langsung karena GitHub App Vercel belum terpasang pada akun. Jika GitHub App diaktifkan, project dapat dihubungkan ke branch `main` agar deployment berjalan otomatis setiap push.
+Deployment production saat ini menggunakan export statis. Status push GitHub tidak memastikan deployment Vercel terjadi; jangan mengasumsikan deployment otomatis tanpa integrasi yang sudah diverifikasi.
 
 Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Setiap kartu produk membuka WhatsApp `+62 895-6092-50509` dengan nama dan harga produk yang sudah terisi. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.
+
+Untuk langkah setup IDE, run lokal, dan validasi sebelum push, lihat [Panduan Antigravity](docs/antigravity.md).
